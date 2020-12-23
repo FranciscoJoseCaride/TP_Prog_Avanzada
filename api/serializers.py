@@ -1,8 +1,8 @@
 
 from rest_framework import serializers
-from .models import student
+from .models import spam_ham
 
-class studenserializers(serializers.ModelSerializer):
+class spamserializers(serializers.ModelSerializer):
     class Meta:
-        model = student
-        fields = ['name','age']
+        model = spam_ham
+        fields = ['text','result']
